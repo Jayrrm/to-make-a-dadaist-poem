@@ -54,7 +54,7 @@
     <div id="poem"></div>
     <!-- script -->
     <script>
-      const article = `Over the weekend, Ukrainian President Volodymyr Zelenskyy made a desperate plea to the United States to help Kyiv get more warplanes to fight Russia's invasion and retain control of its airspace. US Secretary of State Antony Blinken says Washington has given a "green light" to the idea and is currently "very, very actively" looking at a proposal under which Ukraine's neighbour Poland would supply Kyiv with Soviet-era fighters and in turn receive American F-16s. However, the proposition is fraught with uncertainty and Poland has been less than enthusiastic about it in public, largely because Russia has warned that supporting Ukraine's air force would be seen in Moscow as participating in the conflict, opening it up to possible retaliation. The only official comment from NATO and European Union member Poland has been to confirm that talks on the subject are continuing.`;
+      const article = `Telstra has partnered with a Starlink-like satellite internet service, opening the way for direct competition with Elon Musk's company. At a conference in Barcelona, Telstra chief executive officer Andrew Penn announced a memorandum of understanding with UK-based OneWeb to bring a low-Earth orbit (LEO) satellite internet service to Australia. It's the first time one of the established telcos has opted for LEOs, and could lead to faster internet at lower prices for rural and regional areas that cannot access the fixed-line network. LEO satellites are closer to the ground than geostationary ones, which means signals have a shorter distance to travel, resulting in less of a lag (also known as latency) in communications. Starlink, which is owned by Elon Musk's SpaceX company, launched an LEO service in Australia last year and has been stealing customers from NBN's Sky Muster, which uses geostationary satellites. So can Telstra compete with Starlink? And what does this mean for the future of Sky Muster?`;
       const button = document.getElementById("new-poem");
       function shuffleWords(list) {
         return list
@@ -76,7 +76,7 @@
       function assemblePoem(articleWords) {
         let lineText = "";
         for (const [counter, word] of articleWords.entries()) {
-          if ((counter + 1) % 4 == 0) {
+          if ((counter + 1) % 7 == 0) {
             addLine(lineText);
             lineText = "";
           } else {
