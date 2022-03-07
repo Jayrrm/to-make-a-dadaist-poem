@@ -54,7 +54,7 @@
     <div id="poem"></div>
     <!-- script -->
     <script>
-      const article = `Government officials were warned repeatedly about making misleading claims about job figures before the official statistics watchdog reprimanded Boris Johnson over the matter. Ed Humpherson, the director general of the UK Statistics Authority (UKSA), said there had been “a series of informal discussions” before the regulator took the “unusual” step of issuing public rebukes to No 10 over the same issue twice last month. During more than half a dozen editions of prime minister’s questions since November, Johnson has made the misleading claim that more people are in employment in the UK than before the pandemic began. Yet, although the numbers of workers on payrolls has risen, the number of self-employed people has dropped significantly so that the total number of people in work is down by 600,000. The chair of the UKSA, Sir David Norgrove, wrote to Johnson saying he was making “a selective use of data” and added that “public trust requires a complete statement”.`;
+      const article = `Over the weekend, Ukrainian President Volodymyr Zelenskyy made a desperate plea to the United States to help Kyiv get more warplanes to fight Russia's invasion and retain control of its airspace. US Secretary of State Antony Blinken says Washington has given a "green light" to the idea and is currently "very, very actively" looking at a proposal under which Ukraine's neighbour Poland would supply Kyiv with Soviet-era fighters and in turn receive American F-16s. However, the proposition is fraught with uncertainty and Poland has been less than enthusiastic about it in public, largely because Russia has warned that supporting Ukraine's air force would be seen in Moscow as participating in the conflict, opening it up to possible retaliation. The only official comment from NATO and European Union member Poland has been to confirm that talks on the subject are continuing.`;
       const button = document.getElementById("new-poem");
       function shuffleWords(list) {
         return list
@@ -76,7 +76,7 @@
       function assemblePoem(articleWords) {
         let lineText = "";
         for (const [counter, word] of articleWords.entries()) {
-          if ((counter + 1) % 5 == 0) {
+          if ((counter + 1) % 4 == 0) {
             addLine(lineText);
             lineText = "";
           } else {
